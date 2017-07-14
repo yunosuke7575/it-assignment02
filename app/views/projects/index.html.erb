@@ -4,6 +4,7 @@
 	<% @projects.each do |project| %>
 	<li><%= link_to project.title, project_path(project.id) %>
 		<%= link_to "[Edit]", edit_project_path(project.id) %>
+		<%= link_to "[Delete]", project_path(project.id), method: :delete, data: {confirm: "削除しますか？" } %>
 	</li>
 	<% end %>
 </ul>
