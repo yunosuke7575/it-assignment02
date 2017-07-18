@@ -1,24 +1,14 @@
-# README
+# タスク管理アプリ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Railsを使用した簡単なタスク管理アプリです。テキストと画像を一つのタスクとして保存できます。
 
-Things you may want to cover:
+画像のアップロードには
+```
+gem 'carrierwave'
+```
+を使用
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Heroku上での画像保存先は、AWSのS3を使用しています
+```
+gem 'fog'
+```
